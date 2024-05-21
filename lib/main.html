@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="main.js">    </script>
+</head>
+
+<body>
+    <div>
+        <!-- هدر سایت -->
+        <div class="row">
+            <ul class="appbar">
+                <li class="spacer">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                </li>
+                <li class="appbarItem">خانه</li>
+                <li class="appbarItem">فیلم ها</li>
+                <li class="appbarItem">سریال ها</li>
+                <li class="appbarItem">درباره ما</li>
+                <li class="spacer"></li>
+                <li class="appbarItem"><button class="buttonProfile"><img
+                            src="../assets/images/user_image.png"></button></li>
+            </ul>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">خانه</a>
+                <a href="#">فیلم ها</a>
+                <a href="#">سریال ها</a>
+                <a href="#">پروفایل</a>
+            </div>
+        </div>
+
+        <!-- پیج ویوو -->
+        <div class="pageViewContainer">
+            <button class="navButton_prev" onclick="prevPage()">❮</button>
+            <img class="pageViewItem" src="../assets/images/kung-fu-panda-4-wallpaper-2.webp" alt="Kung Fu Panda 4">
+            <img class="pageViewItem" src="../assets/images/godzilla.jpg" alt="Item 2">
+            <img class="pageViewItem" src="../assets/images/empaug23-newsstand-cover-crop.jpg" alt="Item 3">
+            <button class="navButton_next" onclick="nextPage()">❯</button>
+        </div>
+        <div class="indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+    </div>
+</body>
+
+</html>
