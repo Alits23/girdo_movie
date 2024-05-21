@@ -25,6 +25,7 @@ body {
 
 .appbarItem:hover {
     color: gold;
+    font-size: x-large;
 }
 
 .buttonProfile {
@@ -81,6 +82,7 @@ body {
 
 .sidebar a:hover {
     color: gold;
+
 }
 
 .sidebar .closebtn {
