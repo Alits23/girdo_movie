@@ -4,10 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Girdo Movie</title>
+    <title>Girdo Movie - خانه</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src="main.js">    </script>
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -18,24 +18,24 @@
                 <li class="spacer">
                     <button class="openbtn" onclick="openNav()">☰</button>
                 </li>
-                <li class="appbarItem">خانه</li>
-                <li class="appbarItem">فیلم ها</li>
-                <li class="appbarItem">سریال ها</li>
-                <li class="appbarItem">درباره ما</li>
+                <li class="appbarItem activePage"><a href="main.html">خانه</a></li>
+                <li class="appbarItem"><a href="movies/sinamey/movies.html">فیلم ها</a></li>
+                <li class="appbarItem"><a href="movies/serial/series.html">سریال ها</a></li>
+                <li class="appbarItem"><a href="about/about.html">درباره ما</a></li>
                 <li class="spacer"></li>
                 <li class="appbarItem"><button class="buttonProfile"><img
                             src="../assets/images/user_image.png"></button></li>
             </ul>
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#">خانه</a>
-                <a href="#">فیلم ها</a>
-                <a href="#">سریال ها</a>
-                <a href="#">پروفایل</a>
+                <a href="main.html">خانه</a>
+                <a href="movies.html">فیلم ها</a>
+                <a href="series.html">سریال ها</a>
+                <a href="profile.html">پروفایل</a>
             </div>
         </div>
 
-        <!-- پیج ویوو -->
+        <!-- محتوای صفحه خانه -->
         <div class="pageViewContainer">
             <button class="navButton_prev" onclick="prevPage()">❮</button>
             <img class="pageViewItem" src="../assets/images/kung-fu-panda-4-wallpaper-2.webp" alt="Kung Fu Panda 4">
@@ -49,6 +49,8 @@
             <span class="indicator"></span>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
