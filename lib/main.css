@@ -1,18 +1,26 @@
+html,
 body {
-    padding-top: 1%;
     direction: rtl;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 47, 47);
+
 }
 
 .appbar {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    position: sticky;
-    top: 0;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(48, 47, 47);
     width: 100%;
-    margin: 0;
     padding: 0;
-    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0;
 }
 
 .appbarItem {
@@ -38,7 +46,7 @@ body {
     border: none;
     height: 40px;
     width: 40px;
-    margin: 10;
+    margin: 10px;
     border-radius: 50%;
 }
 
@@ -52,7 +60,7 @@ body {
     cursor: pointer;
     padding: 10px 15px;
     border: none;
-    margin: 0 10px;
+    margin-right: 10px;
     color: gold;
     border-radius: 10px;
 }
@@ -101,6 +109,16 @@ body {
 .appbarItem.activePage {
     color: gold;
     font-size: x-large;
+    position: relative;
+}
+
+.appbarItem.activePage::after {
+    content: "";
+    position: absolute;
+    bottom: -0.1px;
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(to right, #444, gold, #444);
 }
 
 /* PageView styles */
@@ -108,7 +126,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 100px;
+    /* فضای خالی برای appbar */
     position: relative;
     width: 100%;
     overflow: hidden;
