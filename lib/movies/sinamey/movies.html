@@ -23,8 +23,12 @@
                 <li class="appbarItem"><a href="../serial/series.html">سریال ها</a></li>
                 <li class="appbarItem"><a href="../../about/about.html">درباره ما</a></li>
                 <li class="spacer"></li>
-                <li class="appbarItem"><button class="buttonProfile"><img
-                            src="../../../assets/images/user_image.png"></button></li>
+                <li class="appbarItem">
+                    <button class="buttonProfile" onclick="openDropDown()">
+                        <img src="../../../assets/images/user_image.png">
+                    </button>
+
+                </li>
             </ul>
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -32,6 +36,12 @@
                 <a href="../../movies.html">فیلم ها</a>
                 <a href="../serial/series.html">سریال ها</a>
                 <a href="../../about/about.html">درباره ما</a>
+            </div>
+            <div id="dropdownContent" class="dropdown-content">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeDropDown()">×</a>
+                <a href="../profile/profile.html">حساب کاربری</a>
+                <a href="#">تنظیمات</a>
+                <a href="../../auth/sign/auth.HTML">ورود به حساب</a>
             </div>
         </div>
 
