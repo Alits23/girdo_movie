@@ -1,0 +1,115 @@
+<!doctype html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>قالب html فیلم و سریال</title>
+    <!-- Favicon -->
+  
+    <link rel="stylesheet" href="panlkarbar.css" />
+</head>
+<body>
+    <!-- MainContent -->
+    <section class="m-profile setting-wrapper">
+        <div class="container">
+            <h4 class="main-title mb-4">تنظیمات حساب</h4>
+            <div class="row">
+                <div class="col col-4 mb-3">
+                    <div class="sign-user_card text-center">
+                        <img src="" class="rounded-circle img-fluid d-block mx-auto mb-3" alt="user">
+                        <h4 class="mb-3">mreza</h4>
+                        <p>کاربر </p>
+                        <a href="#" class="edit-icon text-primary">ویرایش</a>
+                    </div>
+                </div>
+                <div class="col col-8">
+                    <div class="sign-user_card">
+                        <h5 class="mb-3 pb-3 a-border">مشخصات شخصی</h5>
+                        <div class="row align-items-center justify-content-between mb-3">
+                            <div class="col">
+                                <span class="text-light font-size-13">ایمیل</span>
+                                <p class="mb-0">example@gmail.com</p>
+                            </div>
+                            <div class="col text-right">
+                                <a href="#" class="text-primary">ویرایش</a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-between mb-3">
+                            <div class="col">
+                                <span class="text-light font-size-13">رمز عبور</span>
+                                <p class="mb-0">**********</p>
+                            </div>
+                            <div class="col text-right">
+                                <a href="#" class="text-primary">ویرایش</a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-between mb-3">
+                            <div class="col">
+                                <span class="text-light font-size-13">تاریخ تولد</span>
+                                <p class="mb-0">1375/05/22</p>
+                            </div>
+                            <div class="col text-right">
+                                <a href="#" class="text-primary">ویرایش</a>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col">
+                                <span class="text-light font-size-13">زبان</span>
+                                <p class="mb-0">فارسی</p>
+                            </div>
+                            <div class="col text-right">
+                                <a href="#" class="text-primary">ویرایش</a>
+                            </div>
+                        </div>
+                        <h5 class="mb-3 mt-4 pb-3 a-border">جزئیات صورتحساب</h5>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col r-mb-15">
+                                <p>تاریخ بعدی صورت حساب شما 28 شهریور 1400 می باشد</p>
+                                <a href="#" class="btn btn-hover">لغو عضویت</a>
+                            </div>
+                            <div class="col text-right">
+                                <a href="#" class="text-primary">به روز رسانی اطلاعات پرداخت</a>
+                            </div>
+                        </div>
+                        <h5 class="mb-3 mt-4 pb-3 a-border">جزئیات طرح</h5>
+                        <div class="row justify-content-between mb-3">
+                            <div class="col">
+                                <p>ویژه</p>
+                            </div>
+                            <div class="col text-right">
+                                <a href="#" class="text-primary">ویرایش طرح</a>
+                            </div>
+                        </div>
+                        <h5 class="mb-3 pb-3 mt-4 a-border">تنظیمات</h5>
+                        <div class="row">
+                            <div class="col setting">
+                                <a href="#" class="text-body d-block mb-1">فعالیت جاری دستگاه اخیر</a>
+                                <a href="#" class="text-body d-block mb-1">خروج از سیستم همه دستگاه ها</a>
+                                <a href="#" class="text-body d-block ">اطلاعات شخص خود را بارگیری کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <div id="back-to-top">
+        <a class="top" href="#top" id="top"> <i class="fa fa-angle-up"></i> </a>
+    </div>
+    <script>
+        // جاوا اسکریپت برای تعامل با کاربر
+        document.addEventListener('DOMContentLoaded', function() {
+            const editIcons = document.querySelectorAll('.edit-icon');
+            editIcons.forEach(icon => {
+                icon.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    alert('ویرایش کلیک شد');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
